@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }}</title>
+        <meta name="description" content="{{ meta.description }}">
+        <!-- Base stylesheet -->
+        <link rel="stylesheet" type="text/css" href="/styles/site.min.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=albert-sans:400,400i,600,800" rel="stylesheet">
+        <!-- Fontawesome Icons -->
+        <script defer src="/fontawesome/sharp-light.min.js"></script>
+        <script defer src="/fontawesome/fontawesome.min.js"></script>
+    </head>
+    <body>
+        {% render 'partials/components/site_header.liquid' with site.nav as navigation %}
+        {% block main %}
+        {% endblock %}
+        {% render 'partials/components/site_footer.liquid' with site.nav as navigation %}
+    </body>
+</html>

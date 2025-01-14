@@ -1,0 +1,29 @@
+.home .location {
+    padding-inline: var(--gutter-spacing);
+    margin-inline: auto;
+
+    & .section-wrapper {
+        position: relative;
+        border-radius: var(--rounded-md);
+        overflow: hidden;
+        padding-block: var(--space-3xl);
+        padding-inline: var(--space-l-xl);
+    }
+
+    & .walkscore {
+        display: flex;
+        align-items: center;
+        gap: var(--space-s);
+        width: fit-content;
+        margin-inline: auto;
+        background-color: rgb(255 255 255 / 90%);
+        border-radius: var(--rounded-sm);
+        padding-block: var(--space-2xs);
+        padding-inline: var(--space-m);
+
+        & .number {
+            font-size: var(--step-4);
+            font-weight: var(--font-heading-weight);
+        }
+    }
+}

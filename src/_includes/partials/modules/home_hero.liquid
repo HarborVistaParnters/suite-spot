@@ -1,0 +1,37 @@
+<section aria-labelledby="{{ module.heading | slugify }}" class="hero">
+    <div class="rounded-section-wrapper with-bg-image">
+        <div class="content-wrapper">
+            <div class="panes" data-composition="diptych" data-offset="left">
+                <div class="flow moderato">
+                    <h1 id="{{ module.heading | slugify }}" class="text-white">{{ module.heading }}</h1>
+                    <p class="text-step-1 text-white">{{ module.preview }}</p>
+                    <div class="ctas | cluster">
+                        {% for link in module.ctas %}
+                            <a href="{{ link.href }}" class="button-link" data-theme="{{ link.style }}">
+                                {{- link.label -}}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="featured">
+                    <a href="{{ module.featured_box.href }}" class="text">{{ module.featured_box.text }}</a>
+                    <img
+                        src="{{ module.featured_box.image.src }}"
+                        alt=""
+                        loading="eager"
+                        class="aspect-portait"
+                        eleventy:widths="900"
+                    >
+                </div>
+            </div>
+        </div>
+        <img
+            src="{{ module.background_image.src }}"
+            alt="{{ module.background_image.alt }}"
+            class="bg-image"
+            loading="eager"
+            eleventy:widths="1400,900"
+            sizes="auto"
+        >
+    </div>
+</section>

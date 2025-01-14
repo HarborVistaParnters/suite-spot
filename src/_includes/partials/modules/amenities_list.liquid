@@ -1,0 +1,20 @@
+<section aria-labelledby="{{ module.heading | slugify }}" class="amenities-list">
+    <div class="content-wrapper">
+        <h2 id="{{ module.heading | slugify }}" class="text-white text-center">{{ module.heading }}</h2>
+        <div class="fluid-grid">
+            {% for amenity in amenities %}
+                <div class="amenity | flow presto">
+                    <i class="fa-sharp fa-light fa-lg fa-{{ amenity.icon -}}"></i>
+                    <p>{{ amenity.text }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <img
+        src="{{ module.featured_image.src }}"
+        alt="{{ module.featured_image.alt }}"
+        class="bg-image"
+        eleventy:widths="1400,800"
+        sizes="auto"
+    >
+</section>

@@ -1,0 +1,31 @@
+<article class="listing-card | flow presto">
+    {% for property in properties %}
+        {% if property.fileSlug == listing.property_reference %}
+            {% assign linked_property = property %}
+        {% endif %}
+    {% endfor %}
+    <a href="{{ listing.url }}" target="_blank" class="image-wrapper">
+        <img
+            src="{{ listing.featured_image.src }}"
+            alt="{{ listing.featured_image.alt }}"
+            class="aspect-landscape"
+            eleventy:widths="800"
+        >
+        <div class="tag success">{{ listing.rent }}</div>
+    </a>
+    <header class="address">
+        <h3>
+            {{- linked_property.data.title }}
+            #{{ listing.room_number -}}
+        </h3>
+        <p class="small-title">{{ linked_property.data.location }}</p>
+    </header>
+    <div class="info | cluster">
+        <span>{{ linked_property.data.total_beds }} Bed/{{ linked_property.data.total_baths }} Bath</span
+        ><span class="divider">•</span><span class="available">Available {{ listing.available_on | short_date }}</span>
+    </div>
+    <a href="{{ listing.url }}" target="_blank" class="button-link" data-size="small" data-theme="dark">
+        View Details
+        <i class="fa-sharp fa-light fa-arrow-right"></i>
+    </a>
+</article>

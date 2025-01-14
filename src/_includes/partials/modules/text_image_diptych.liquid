@@ -1,0 +1,33 @@
+<section aria-labelledby="{{ module.heading | slugify }}" class="text-image-diptych | section-spacing">
+    <div class="content-wrapper">
+        <div
+            class="panes"
+            data-composition="diptych"
+            data-layout="{%- if module.layout == "image-left" -%} flipped {%- else -%} normal {%- endif -%}"
+        >
+            <div class="flow moderato">
+                <h2 id="{{ module.heading | slugify }}">{{ module.heading }}</h2>
+                <p>{{ module.preview }}</p>
+                {% if module.cta %}
+                    <a href="{{ module.cta.href }}" class="button-link" data-theme="{{ module.cta.style }}">
+                        {{- module.cta.label -}}
+                    </a>
+                {% endif %}
+            </div>
+            <div class="images">
+                <img
+                    src="{{ module.secondary_image.src }}"
+                    alt="{{ module.secondary_image.alt }}"
+                    class="secondary"
+                    eleventy:widths="900"
+                >
+                <img
+                    src="{{ module.featured_image.src }}"
+                    alt="{{ module.featured_image.alt }}"
+                    class="featured"
+                    eleventy:widths="900"
+                >
+            </div>
+        </div>
+    </div>
+</section>

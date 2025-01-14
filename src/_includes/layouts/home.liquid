@@ -1,0 +1,10 @@
+{% layout 'layouts/base.liquid' %}
+
+{% block main %}
+<main class="home">
+    {% for section in pages.home %}
+        {%- capture path -%} partials/modules/{{ section.type }}.liquid {%- endcapture -%}
+        {% render path, module: section, collections: collections, amenities: property_amenities, faqs: faqs %}
+    {% endfor %}
+</main>
+{% endblock %}

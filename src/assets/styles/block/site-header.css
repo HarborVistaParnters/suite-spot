@@ -1,0 +1,13 @@
+.site-header {
+    padding-inline: var(--gutter-spacing);
+    margin-inline: auto;
+    margin-block: var(--space-m);
+
+    & > .cluster {
+        --cluster-justify: space-between;
+    }
+
+    & nav .cluster {
+        --cluster-justify: flex-start;
+    }
+}

@@ -1,0 +1,5 @@
+.home .current-listings-list {
+    & .fluid-grid {
+        margin-block-start: var(--space-l);
+    }
+}

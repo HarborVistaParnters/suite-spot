@@ -1,0 +1,42 @@
+{
+    "header": [
+        {
+            "title": "About",
+            "href": "#flexible-leases-at-affordable-prices"
+        },
+        {
+            "title": "Current Listings",
+            "href": "#current-listings"
+        },
+        {
+            "title": "FAQs",
+            "href": "#frequently-asked-questions"
+        },
+        {
+            "title": "Apply Now",
+            "href": "#ready-to-get-started",
+            "is_cta": true
+        }
+    ],
+    "footer": [
+        {
+            "title": "About",
+            "href": "#flexible-leases-at-affordable-prices"
+        },
+        {
+            "title": "Current Listings",
+            "href": "https://suitespot.appfolio.com/listings",
+            "external": true
+        },
+        {
+            "title": "FAQs",
+            "href": "#frequently-asked-questions"
+        },
+        {
+            "title": "Apply Now",
+            "href": "#",
+            "is_cta": true,
+            "external": true
+        }
+    ]
+}

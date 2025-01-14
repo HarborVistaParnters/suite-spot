@@ -1,0 +1,22 @@
+<section aria-labelledby="{{ module.heading | slugify }}" class="location | section-spacing">
+    <div class="rounded-section-wrapper with-bg-image">
+        <div class="content-wrapper slim">
+            <div class="flow moderato">
+                <h2 id="{{ module.heading | slugify }}" class="text-white text-center">{{ module.heading }}</h2>
+                <p class="text-white text-center">{{ module.preview }}</p>
+                <div class="walkscore">
+                    <div class="number">{{ module.walkscore.score }}</div>
+                    <div class="label small-title">{{ module.walkscore.label }}</div>
+                </div>
+            </div>
+        </div>
+        <img
+            src="{{ module.featured_image.src }}"
+            alt="{{ module.featured_image.alt }}"
+            class="bg-image"
+            loading="eager"
+            eleventy:widths="1400,800"
+            sizes="auto"
+        >
+    </div>
+</section>

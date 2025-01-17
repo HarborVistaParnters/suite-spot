@@ -2,12 +2,11 @@
     padding-inline: var(--gutter-spacing);
     margin-inline: auto;
 
-    & .section-wrapper {
-        position: relative;
-        border-radius: var(--rounded-md);
-        overflow: hidden;
-        padding-block: var(--space-3xl);
-        padding-inline: var(--space-l-xl);
+    & .rounded-section-wrapper.with-bg-image {
+        & picture:has(.bg-image) {
+            top: 0;
+            transform: translate(-50%, 0%);
+        }
     }
 
     & .walkscore {
@@ -18,12 +17,24 @@
         margin-inline: auto;
         background-color: rgb(255 255 255 / 90%);
         border-radius: var(--rounded-sm);
-        padding-block: var(--space-2xs);
+        padding-block: var(--space-3xs);
         padding-inline: var(--space-m);
 
         & .number {
             font-size: var(--step-4);
             font-weight: var(--font-heading-weight);
+        }
+    }
+
+    & .walk-highlights {
+        & svg {
+            color: var(--theme--icon-secondary);
+        }
+
+        & p:first-of-type {
+            font-size: var(--step-1);
+            font-weight: var(--font-medium-weight);
+            margin-block-start: var(--space-2xs);
         }
     }
 }

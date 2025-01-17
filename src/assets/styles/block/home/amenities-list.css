@@ -26,7 +26,7 @@
         box-shadow: var(--shadow-base);
 
         & svg {
-            color: color-mix(in srgb, var(--secondary-8), var(--secondary-9));
+            color: var(--theme--icon-secondary);
         }
     }
 

@@ -1,7 +1,7 @@
 [
     {
         "type": "home_hero",
-        "heading": "Plug and play Bay Area co-living",
+        "heading": "Plug and Play Bay Area Co-Living",
         "preview": "Fully furnished, professionally-managed private bed/bath suites on the SF Peninsula.",
         "background_image": {
             "src": "/assets/images/home-hero-bg.jpg",
@@ -9,7 +9,7 @@
         },
         "featured_box": {
             "image": {
-                "src": "/assets/images/redwood-city-map.png",
+                "src": "/assets/images/redwood-city-map-3.png",
                 "alt": "Test"
             },
             "text": "3 Available Rooms",
@@ -31,8 +31,8 @@
     {
         "type": "text_image_diptych",
         "layout": "image-right",
-        "heading": "Flexible leases at affordable prices",
-        "preview": "Whether you are new to the area, just passing through, or simply looking for a comfortable living situation in a welcoming community, we’ve got you covered.",
+        "heading": "Flexible Leases at Affordable Prices",
+        "preview": "Whether you are new to the area, just passing through, or simply looking for a comfortable living situation in a welcoming community, Suite Spot has you covered.",
         "featured_image": {
             "src": "/assets/images/roommates.jpg",
             "alt": "Test"
@@ -53,7 +53,7 @@
     },
     {
         "type": "amenities_list",
-        "heading": "Property Amenities",
+        "heading": "Suite Spot Amenities",
         "featured_image": {
             "src": "/assets/images/jefferson-featured.jpg",
             "alt": "Test"
@@ -61,14 +61,31 @@
     },
     {
         "type": "location_highlights",
-        "heading": "The best of Bay Area walkable living",
-        "preview": "Located just south of Redwood City’s vibrant downtown, our properties offer the best of Bay Area living. Each property is within walking distance to various shops and restaurants— including Whole Foods, Safeway, CVS, and Jamba Juice— as well as the CalTrain Sequioa Station.",
+        "heading": "The Best of Bay Area Walkable Living",
+        "preview": "Located just south of Redwood City’s vibrant downtown, Suite Spot properties offer the best of Bay Area living. Each property is within walking distance to various shops and restaurants — including Whole Foods, Safeway, CVS, and Jamba Juice — as well as the CalTrain Sequioa Station.",
         "walkscore": {
             "score": 92,
             "label": "Neighborhood Walk Score"
         },
+        "walk_highlights": [
+            {
+                "title": "Caltrain Station",
+                "distance": "10 minutes",
+                "icon": "train"
+            },
+            {
+                "title": "Whole Foods Market",
+                "distance": "5 minutes",
+                "icon": "cart-shopping"
+            },
+            {
+                "title": "Downtown Redwood City",
+                "distance": "10 minutes",
+                "icon": "shop"
+            }
+        ],
         "featured_image": {
-            "src": "/assets/images/sf-bay.jpg",
+            "src": "/assets/images/new-sequoia-theater.jpeg",
             "alt": "Test"
         }
     },
@@ -79,7 +96,7 @@
     {
         "type": "text_image_diptych",
         "layout": "image-left",
-        "heading": "Ready to get started?",
+        "heading": "Ready to Get Started?",
         "preview": "Contact us for more information on how to apply.",
         "featured_image": {
             "src": "/assets/images/adu-interior-3.jpg",
@@ -89,10 +106,17 @@
             "src": "/assets/images/adu-interior-2.jpg",
             "alt": "Test"
         },
-        "cta": {
-            "label": "Contact Us",
-            "style": "gradient",
-            "href": "/"
-        }
+        "ctas": [
+            {
+                "label": "Contact Us",
+                "style": "gradient",
+                "href": "/"
+            },
+            {
+                "label": "Apply Now",
+                "style": "dark",
+                "href": "/"
+            }
+        ]
     }
 ]

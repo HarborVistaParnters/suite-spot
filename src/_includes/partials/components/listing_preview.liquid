@@ -21,8 +21,11 @@
         <p class="small-title">{{ linked_property.data.location }}</p>
     </header>
     <div class="info | cluster">
-        <span>{{ linked_property.data.total_beds }} Bed/{{ linked_property.data.total_baths }} Bath</span
-        ><span class="divider">•</span><span class="available">Available {{ listing.available_on | short_date }}</span>
+        {% comment %}
+            <span>{{ linked_property.data.total_beds }} Bed/{{ linked_property.data.total_baths }} Bath</span
+            ><span class="divider">•</span>
+        {% endcomment %}
+        <span class="available">Available {{ listing.available_on | short_date }}</span>
     </div>
     <a href="{{ listing.url }}" target="_blank" class="button-link" data-size="small" data-theme="dark">
         View Details

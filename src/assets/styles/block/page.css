@@ -13,7 +13,7 @@ html {
         &::before {
             content: "";
             position: absolute;
-            background: var(--bg-image-overlay, rgb(0 0 0 / 50%));
+            background: var(--bg-image-overlay, rgb(0 0 0 / 60%));
             z-index: -1;
             inset: 0;
             width: 100%;

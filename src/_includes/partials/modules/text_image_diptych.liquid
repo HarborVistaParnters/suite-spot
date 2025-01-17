@@ -8,10 +8,14 @@
             <div class="flow moderato">
                 <h2 id="{{ module.heading | slugify }}">{{ module.heading }}</h2>
                 <p>{{ module.preview }}</p>
-                {% if module.cta %}
-                    <a href="{{ module.cta.href }}" class="button-link" data-theme="{{ module.cta.style }}">
-                        {{- module.cta.label -}}
-                    </a>
+                {% if module.ctas %}
+                    <div class="ctas cluster">
+                        {% for link in module.ctas %}
+                            <a href="{{ link.href }}" class="button-link" data-theme="{{ link.style }}">
+                                {{- link.label -}}
+                            </a>
+                        {% endfor %}
+                    </div>
                 {% endif %}
             </div>
             <div class="images">

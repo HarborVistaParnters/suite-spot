@@ -1,8 +1,10 @@
 <footer class="site-footer">
     <div class="content-wrapper grid-12">
         <div class="flow presto">
-            <a href="/" class="logo">Suite Spot</a>
-            <a href="/" class="block-link">info@suitespot.com</a>
+            <a href="/" class="logo">
+                {% render 'partials/svg/logo-test-white.svg' %}
+            </a>
+            <a href="/" class="block-link">info@suitespotmgmt.com</a>
         </div>
         <div class="flow allegro">
             {% for entry in navigation.footer %}

@@ -1,8 +1,8 @@
 [
     {
         "type": "home_hero",
-        "heading": "Plug and Play Bay Area Co-Living",
-        "preview": "Fully furnished, professionally-managed private bed/bath suites on the SF Peninsula.",
+        "heading": "Plug and Play Silicon Valley Co-Living",
+        "preview": "Fully furnished, professionally-managed private bed/bath suites in the Bay Area/Silicon Valley.",
         "background_image": {
             "src": "/assets/images/home-hero-bg.jpg",
             "alt": "Test"
@@ -61,8 +61,8 @@
     },
     {
         "type": "location_highlights",
-        "heading": "The Best of Bay Area Walkable Living",
-        "preview": "Located just south of Redwood City’s vibrant downtown, Suite Spot properties offer the best of Bay Area living. Each property is within walking distance to various shops and restaurants — including Whole Foods, Safeway, CVS, and Jamba Juice — as well as the CalTrain Sequioa Station.",
+        "heading": "The Best of Silicon Valley Walkable Living",
+        "preview": "Located just south of Redwood City’s vibrant downtown, Suite Spot properties offer the best of Silicon Valley living. Each property is within walking distance to various shops and restaurants — including Whole Foods, Safeway, CVS, and Jamba Juice — as well as the Caltrain Sequioa Station.",
         "walkscore": {
             "score": 92,
             "label": "Neighborhood Walk Score"

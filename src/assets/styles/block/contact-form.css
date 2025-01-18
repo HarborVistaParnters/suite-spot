@@ -1,6 +1,4 @@
 .contact-form {
-    padding-block: var(--section-spacing);
-
     & form {
         max-width: 35rem;
         margin-inline: auto;

@@ -4,3 +4,4 @@ package-lock.json
 .cache
 .zed
 .vscode
+.DS_Store

@@ -37,6 +37,13 @@ html {
     }
 }
 
+.interior {
+    & .hero {
+        padding-inline: var(--gutter-spacing);
+        margin-inline: auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .rounded-section-wrapper {
         padding-inline: var(--space-2xs);

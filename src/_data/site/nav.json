@@ -2,41 +2,52 @@
     "header": [
         {
             "title": "About",
-            "href": "#flexible-leases-at-affordable-prices"
+            "href": "/#flexible-leases-at-affordable-prices"
         },
         {
             "title": "Current Listings",
-            "href": "#current-listings"
+            "href": "/#current-listings"
         },
         {
             "title": "FAQs",
-            "href": "#frequently-asked-questions"
+            "href": "/#frequently-asked-questions"
+        },
+        {
+            "title": "Contact",
+            "href": "/contact"
         },
         {
             "title": "Apply Now",
-            "href": "#ready-to-get-started",
+            "href": "https://suitespot.appfolio.com/listings",
             "is_cta": true
         }
     ],
-    "footer": [
-        {
-            "title": "About",
-            "href": "#flexible-leases-at-affordable-prices"
-        },
-        {
-            "title": "Current Listings",
-            "href": "https://suitespot.appfolio.com/listings",
-            "external": true
-        },
-        {
-            "title": "FAQs",
-            "href": "#frequently-asked-questions"
-        },
-        {
-            "title": "Apply Now",
-            "href": "#",
-            "is_cta": true,
-            "external": true
-        }
-    ]
+    "footer": {
+        "links": [
+            {
+                "title": "About",
+                "href": "/#flexible-leases-at-affordable-prices"
+            },
+            {
+                "title": "Current Listings",
+                "href": "/#current-listings"
+            },
+            {
+                "title": "FAQs",
+                "href": "/#frequently-asked-questions"
+            },
+            {
+                "title": "Contact Us",
+                "href": "/contact"
+            },
+            {
+                "title": "Apply Now",
+                "href": "https://suitespot.appfolio.com/listings",
+                "is_cta": true,
+                "external": true
+            }
+        ],
+        "contact": "golan@suitespotmgmt.com",
+        "copyright": 2025
+    }
 }

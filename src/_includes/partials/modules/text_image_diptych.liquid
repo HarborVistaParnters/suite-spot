@@ -11,7 +11,12 @@
                 {% if module.ctas %}
                     <div class="ctas cluster">
                         {% for link in module.ctas %}
-                            <a href="{{ link.href }}" class="button-link" data-theme="{{ link.style }}">
+                            <a
+                                href="{{ link.href }}"
+                                class="button-link"
+                                data-theme="{{ link.style }}"
+                                target="{% if link.external -%} _blank {%- else -%} _self {%- endif %}"
+                            >
                                 {{- link.label -}}
                             </a>
                         {% endfor %}

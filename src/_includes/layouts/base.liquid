@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ title }}</title>
         <meta name="description" content="{{ meta.description }}">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
         <!-- Base stylesheet -->
         <link rel="stylesheet" type="text/css" href="/styles/site.min.css">
         <!-- Fonts -->
@@ -18,6 +19,6 @@
         {% render 'partials/components/site_header.liquid' with site.nav as navigation %}
         {% block main %}
         {% endblock %}
-        {% render 'partials/components/site_footer.liquid' with site.nav as navigation %}
+        {% render 'partials/components/site_footer.liquid', navigation: site.nav, settings: site.settings %}
     </body>
 </html>

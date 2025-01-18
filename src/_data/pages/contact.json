@@ -1,0 +1,14 @@
+[
+    {
+        "type": "interior_hero",
+        "heading": "Contact Us",
+        "background_image": {
+            "src": "/assets/images/property-exterior-2.jpg",
+            "alt": "Test"
+        }
+    },
+    {
+        "type": "contact_form",
+        "text": "Contact us for more information about our available listings and process."
+    }
+]

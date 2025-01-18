@@ -110,12 +110,13 @@
             {
                 "label": "Contact Us",
                 "style": "gradient",
-                "href": "/"
+                "href": "/contact"
             },
             {
                 "label": "Apply Now",
                 "style": "dark",
-                "href": "/"
+                "href": "https://suitespot.appfolio.com/listings",
+                "external": true
             }
         ]
     }

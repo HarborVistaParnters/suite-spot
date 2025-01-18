@@ -12,7 +12,7 @@ form {
         gap: var(--space-2xs);
     }
 
-    & .form-item:has(input[required]) label::after {
+    & .form-item:has(:is(input[required], textarea[required])) label::after {
         content: "*";
         color: red;
     }
@@ -31,7 +31,7 @@ form {
         font-weight: var(--font-medium-weight);
     }
 
-    & input:is([type="text"], [type="email"]) {
+    & :is(input:is([type="text"], [type="email"]), textarea) {
         border-radius: var(--rounded-sm);
         padding-block: 3px;
         padding-inline: 8px;

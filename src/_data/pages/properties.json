@@ -6,5 +6,9 @@
             "src": "/assets/images/property-exterior-8.jpg",
             "alt": "Test"
         }
+    },
+    {
+        "type": "property_list",
+        "heading": "Properties"
     }
 ]

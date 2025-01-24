@@ -9,7 +9,7 @@
         },
         "featured_box": {
             "image": {
-                "src": "/assets/images/redwood-city-map-3.png",
+                "src": "/assets/images/redwood-city-map-3-star.jpg",
                 "alt": "Test"
             },
             "text": "3 Available Rooms",
@@ -32,7 +32,7 @@
         "type": "text_image_diptych",
         "layout": "image-right",
         "heading": "Flexible Leases at Affordable Prices",
-        "preview": "Whether you are new to the area, just passing through, or simply looking for a comfortable living situation in a welcoming community, Suite Spot has you covered.",
+        "preview": "Whether you are new to the area, just passing through, or looking for a long-term stay, Suite Spot has you covered with our fully furnished new construction properties offering individual rooms for flexible lease terms in a welcoming community.",
         "featured_image": {
             "src": "/assets/images/roommates.jpg",
             "alt": "Test"
@@ -52,6 +52,27 @@
         }
     },
     {
+        "type": "text_image_diptych",
+        "layout": "image-left",
+        "heading": "Our Properties",
+        "preview": "Located just south of Redwood City’s vibrant downtown, our properties offer the best of Bay Area living.",
+        "featured_image": {
+            "src": "/assets/images/property-exterior-6.jpg",
+            "alt": "Test"
+        },
+        "secondary_image": {
+            "src": "/assets/images/property-exterior-8.jpg",
+            "alt": "Test"
+        },
+        "ctas": [
+            {
+                "label": "Explore Properties",
+                "style": "gradient",
+                "href": "/properties"
+            }
+        ]
+    },
+    {
         "type": "amenities_list",
         "heading": "Suite Spot Amenities",
         "featured_image": {
@@ -62,7 +83,7 @@
     {
         "type": "location_highlights",
         "heading": "The Best of Silicon Valley Walkable Living",
-        "preview": "Located just south of Redwood City’s vibrant downtown, Suite Spot properties offer the best of Silicon Valley living. Each property is within walking distance to various shops and restaurants — including Whole Foods, Safeway, CVS, and Jamba Juice — as well as the Caltrain Sequioa Station.",
+        "preview": "Located a 5 Minute Walk from Redwood City’s vibrant downtown, Suite Spot offers the best of Silicon Valley living. Each property is within walking distance to Whole Foods, Safeway, Redwood City Caltrain Station and the Downtown Broadway shopping district with numerous restaurants, coffee shops and nightlife options such as theaters, bars, and nightclubs.",
         "walkscore": {
             "score": 92,
             "label": "Neighborhood Walk Score"
@@ -103,7 +124,7 @@
             "alt": "Test"
         },
         "secondary_image": {
-            "src": "/assets/images/adu-interior-2.jpg",
+            "src": "/assets/images/property-exterior-7.jpg",
             "alt": "Test"
         },
         "ctas": [

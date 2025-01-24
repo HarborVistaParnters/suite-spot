@@ -2,6 +2,7 @@
 title: 160 Harrison Avenue
 location: Redwood City, CA
 zip_code: 94062
+description: About the property
 has_availability: true
 total_beds: 9
 total_baths: 9

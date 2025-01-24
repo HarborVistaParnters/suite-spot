@@ -2,7 +2,9 @@
 
 {% block main %}
 <main class="interior">
-    {% block content %}
-    {% endblock %}
+    {% for section in pages[pageId] %}
+        {%- capture path -%} partials/modules/{{ section.type }}.liquid {%- endcapture -%}
+        {% render path, module: section %}
+    {% endfor %}
 </main>
 {% endblock %}

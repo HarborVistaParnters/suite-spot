@@ -41,6 +41,10 @@ html {
     & .hero {
         padding-inline: var(--gutter-spacing);
         margin-inline: auto;
+
+        & .rounded-section-wrapper {
+            padding-block: calc(var(--section-spacing) * 1.5);
+        }
     }
 }
 

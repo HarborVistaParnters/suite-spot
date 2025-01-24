@@ -18,5 +18,32 @@
             "src": "/assets/images/property-exterior-3.jpg",
             "alt": "Test"
         }
+    },
+    {
+        "type": "text_image_diptych",
+        "layout": "image-left",
+        "heading": "Ready to Get Started?",
+        "preview": "Contact us for more information on how to apply.",
+        "featured_image": {
+            "src": "/assets/images/adu-interior-3.jpg",
+            "alt": "Test"
+        },
+        "secondary_image": {
+            "src": "/assets/images/property-exterior-7.jpg",
+            "alt": "Test"
+        },
+        "ctas": [
+            {
+                "label": "Contact Us",
+                "style": "gradient",
+                "href": "/contact"
+            },
+            {
+                "label": "Apply Now",
+                "style": "dark",
+                "href": "https://suitespot.appfolio.com/listings",
+                "external": true
+            }
+        ]
     }
 ]

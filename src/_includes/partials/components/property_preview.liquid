@@ -1,7 +1,13 @@
-<article class="property-preview | panes" data-composition="diptych">
+<article
+    class="property-preview | panes"
+    data-composition="diptych"
+    data-layout="{%- if index == 1 -%} flipped {%- endif -%}"
+>
+    {% comment %}Need filter to resolve modulo operator for dynamic layout above{% endcomment %}
     <div class="flow moderato">
         <h3 id="{{ property.title | slugify }}">{{ property.title }}</h3>
         <p>{{ property.description }}</p>
+        <a href="{{ url }}" class="button-link" data-theme="gradient">Learn More</a>
     </div>
     <img
         src="{{ property.featured_image.src }}"

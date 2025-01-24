@@ -26,10 +26,10 @@
 @import "block/property.css" layer(main);
 @import "block/page.css" layer(main);
 @import "block/contact-form.css" layer(main);
+@import "block/amenities-list.css" layer(main);
 
 @import "block/home/hero.css" layer(main);
 @import "block/home/current-listings-list.css" layer(main);
-@import "block/home/amenities-list.css" layer(main);
 @import "block/home/location.css" layer(main);
 @import "block/home/faqs.css" layer(main);
 

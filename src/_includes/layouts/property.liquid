@@ -1,7 +1,26 @@
 {% layout 'layouts/base.liquid' %}
 
 {% block main %}
-<main class="property">
-    <h1>{{ title }}</h1>
+<main class="property interior">
+    <section class="hero" aria-labelledby="{{ title | slugify }}">
+        <div class="rounded-section-wrapper with-bg-image">
+            <div class="content-wrapper">
+                <h1 id="{{ title | slugify }}" class="text-white text-center">{{ title }}</h1>
+            </div>
+            <img
+                src="{{ featured_image.src }}"
+                alt="{{ featured_image.alt }}"
+                class="bg-image"
+                loading="eager"
+                eleventy:widths="1400,900"
+                sizes="auto"
+            >
+        </div>
+    </section>
+    <section class="section-spacing">
+        <div class="content-wrapper">
+            <p>{{ description }}</p>
+        </div>
+    </section>
 </main>
 {% endblock %}

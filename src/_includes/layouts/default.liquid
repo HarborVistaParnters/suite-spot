@@ -4,7 +4,7 @@
 <main class="interior">
     {% for section in pages[pageId] %}
         {%- capture path -%} partials/modules/{{ section.type }}.liquid {%- endcapture -%}
-        {% render path, module: section %}
+        {% render path, module: section, collections: collections, amenities: property_amenities %}
     {% endfor %}
 </main>
 {% endblock %}

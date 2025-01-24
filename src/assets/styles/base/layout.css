@@ -79,6 +79,27 @@
     }
 }
 
+.frame {
+    position: relative;
+    display: flex;
+    aspect-ratio: var(--frame-aspect-ratio, var(--default-aspect-ratio));
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &[data-aspect-ratio="1/1"] {
+        --frame-aspect-ratio: 1/1;
+    }
+
+    &[data-aspect-ratio="6/4"] {
+        --frame-aspect-ratio: 6/4;
+    }
+
+    &[data-aspect-ratio="9/7"] {
+        --frame-aspect-ratio: 9/7;
+    }
+}
+
 .panes {
     display: flex;
     flex-wrap: wrap;

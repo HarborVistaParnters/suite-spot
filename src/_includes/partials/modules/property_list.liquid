@@ -1,6 +1,20 @@
-<section aria-labelledby="{{ module.heading | slugify }}" class="amenities-list">
+<section
+    aria-labelledby="{{ module.heading | slugify }}"
+    class="
+        property-list |
+        section-spacing
+    "
+>
     <div class="content-wrapper">
         <h2 id="{{ module.heading | slugify }}" class="visually-hidden">{{ module.heading }}</h2>
-        <p>properties here</p>
+        <div class="flow largo">
+            {% for property in collections.property %}
+                {% render 'partials/components/property_preview.liquid',
+                    property: property.data,
+                    url: property.url,
+                    index: forloop.index0
+                %}
+            {% endfor %}
+        </div>
     </div>
 </section>

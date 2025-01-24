@@ -13,6 +13,10 @@
             "href": "/#frequently-asked-questions"
         },
         {
+            "title": "Our Properties",
+            "href": "/properties"
+        },
+        {
             "title": "Contact",
             "href": "/contact"
         },
@@ -35,6 +39,10 @@
             {
                 "title": "FAQs",
                 "href": "/#frequently-asked-questions"
+            },
+            {
+                "title": "Our Properties",
+                "href": "/properties"
             },
             {
                 "title": "Contact Us",

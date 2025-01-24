@@ -1,4 +1,4 @@
 export default {
-    permalink: false,
     tags: "property",
+    layout: "layouts/property.liquid",
 };

@@ -1,0 +1,10 @@
+[
+    {
+        "type": "interior_hero",
+        "heading": "Our Properties",
+        "background_image": {
+            "src": "/assets/images/property-exterior-8.jpg",
+            "alt": "Test"
+        }
+    }
+]

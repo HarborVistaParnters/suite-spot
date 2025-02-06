@@ -2,7 +2,7 @@
 title: 209 Madison Avenue
 location: Redwood City, CA
 zip_code: 94062
-description: 19 en-suite bedrooms located three blocks from local commercial area.
+description: 19 en-suite bedrooms located three blocks from Whole Foods, Redwood City Caltrain Station, and downtown Redwood City.
 has_availability: false
 total_beds:
 total_baths:

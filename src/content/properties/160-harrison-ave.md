@@ -2,7 +2,7 @@
 title: 160 Harrison Avenue
 location: Redwood City, CA
 zip_code: 94062
-description: 16 en-suite bedrooms located directly across from local commercial area.
+description: 16 en-suite bedrooms located directly across from Whole Foods, Redwood City Caltrain Station, and downtown Redwood City.
 has_availability: true
 total_beds: 9
 total_baths: 9

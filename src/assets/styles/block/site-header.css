@@ -11,3 +11,12 @@
         --cluster-justify: flex-start;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .site-header {
+        & nav .cluster {
+            margin-block-start: var(--space-xs);
+            row-gap: var(--space-2xs);
+        }
+    }
+}

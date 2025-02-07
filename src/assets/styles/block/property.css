@@ -69,3 +69,9 @@
         border-radius: var(--rounded-md);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .property-preview {
+        --panes-gap: var(--space-l);
+    }
+}

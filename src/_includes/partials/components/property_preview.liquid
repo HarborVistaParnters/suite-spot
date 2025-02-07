@@ -1,7 +1,7 @@
 <article
     class="property-preview | panes"
     data-composition="diptych"
-    data-layout="{%- if index == 1 -%} flipped {%- endif -%}"
+    data-layout="{%- if index == 1 -%} flipped {%- else -%} normal {%- endif -%}"
 >
     {% comment %}Need filter to resolve modulo operator for dynamic layout above{% endcomment %}
     <div class="flow moderato">

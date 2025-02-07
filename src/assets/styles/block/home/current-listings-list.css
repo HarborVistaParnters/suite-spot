@@ -3,3 +3,11 @@
         margin-block-start: var(--space-l);
     }
 }
+
+@media screen and (max-width: 640px) {
+    .home .current-listings-list {
+        & .fluid-grid {
+            row-gap: var(--space-xl);
+        }
+    }
+}

@@ -53,3 +53,10 @@ html {
         padding-inline: var(--space-2xs);
     }
 }
+
+@media screen and (max-width: 640px) {
+    .rounded-section-wrapper {
+        padding-inline: var(--space-3xs);
+        padding-block: var(--space-xl);
+    }
+}

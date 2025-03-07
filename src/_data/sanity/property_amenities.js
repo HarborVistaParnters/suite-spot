@@ -10,5 +10,6 @@ const PROPERTY_AMENITIES_QUERY = groq`*[_type == "amenities_list"][0] {
 
 export default async function () {
     const data = await sanity_client.fetch(PROPERTY_AMENITIES_QUERY);
+
     return data;
 }

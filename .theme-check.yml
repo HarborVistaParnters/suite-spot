@@ -13,4 +13,6 @@ RemoteAsset:
     enabled: false
 VariableName:
     severity: info
-    format: camelCase
+    format: snake_case
+UnusedAssign:
+    enabled: false

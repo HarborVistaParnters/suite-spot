@@ -53,20 +53,20 @@
 .property-preview {
     --panes-gap: var(--space-2xl);
 
-    & picture {
+    & .image-wrapper {
         position: relative;
         display: flex;
         aspect-ratio: 6/4;
+        border-radius: var(--rounded-md);
         justify-content: center;
         align-items: center;
         overflow: hidden;
-    }
 
-    & img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: var(--rounded-md);
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
 

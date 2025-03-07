@@ -13,14 +13,22 @@ export const OPEN_GRAPH_PROJECTION = groq`{
     }
 }`;
 
+export const FEATURED_IMAGE_PROJECTION = groq`{
+    asset->,
+    alt,
+    crop,
+    hotspot
+}`;
+
+// use for `link` and `button_link`
 export const LINK_PROJECTION = groq`{
+    _type,
     type,
     label,
-    is_cta,
     type == "reference" => {
         reference-> {
             _id,
-            "slug": pageSlug.current,
+            "slug": slug.current,
             title
         }
     },
@@ -30,5 +38,19 @@ export const LINK_PROJECTION = groq`{
     type == "external" => {
         "href": external,
         target
-    }
+    },
+    style
+}`;
+
+export const PROPERTY_LISTING_PROJECTION = groq`{
+    _type,
+    title,
+    rent,
+    available_on,
+    contact_url,
+    "image": featuredImage ${FEATURED_IMAGE_PROJECTION}
+}`;
+
+export const RICH_TEXT_PROJECTION = groq`_type == "rich_text" => {
+    blocks[]
 }`;

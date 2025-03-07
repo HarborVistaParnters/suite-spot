@@ -19,13 +19,6 @@
                 </div>
             </div>
         </div>
-        <img
-            src="{{ module.featured_image.src }}"
-            alt="{{ module.featured_image.alt }}"
-            class="bg-image"
-            loading="eager"
-            eleventy:widths="1400,800"
-            sizes="auto"
-        >
+        {% sanity_image module.image "1400" "lazy" true "bg-image" %}
     </div>
 </section>

@@ -4,37 +4,23 @@
             <a href="/" class="logo">
                 {% render 'partials/svg/logo-web-footer.svg' %}
             </a>
-            <a href="mailto:{{ navigation.footer.contact }}" class="block-link">{{ navigation.footer.contact }}</a>
+            <a href="mailto:{{ site_settings.site_contact }}" class="block-link">{{ site_settings.site_contact }}</a>
         </div>
         <div class="flow allegro">
-            {% for entry in navigation.footer.links %}
-                <a
-                    href="{{ entry.href }}"
-                    class="nav-link small-title"
-                    {%- if entry.external -%}
-                        target="_blank"
-                    {%- endif -%}
-                >
-                    {{- entry.title -}}
-                </a>
+            {% for item in navigation.items %}
+                {% sanity_link item "nav-link small-title" %}
             {% endfor %}
         </div>
         <div class="flow allegro">
             <a href="https://suitespot.appfolio.com/connect/users/sign_in" target="_blank">Tenant Portal</a>
         </div>
     </div>
-    <img
-        src="/assets/images/property-exterior-4.jpg"
-        alt=""
-        class="bg-image"
-        eleventy:widths="1400,800"
-        sizes="auto"
-    >
+    {% sanity_image site_settings.footer_image "1400" "lazy" true "bg-image" %}
     <div class="subfooter">
         <div class="content-wrapper cluster">
             <div>
-                © {{ navigation.footer.copyright }}
-                {{ settings.site_name }}
+                © {% get_current_year %}
+                {{ site_settings.site_name -}}
             </div>
             <div>Site design by <a href="https://ds-design-studio.com/" target="_blank">DS Design</a></div>
         </div>

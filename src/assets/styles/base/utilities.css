@@ -23,9 +23,15 @@
     width: fit-content;
 }
 
-.aspect-portait {
+.aspect-portrait {
     aspect-ratio: var(--ratio-portrait);
     object-fit: cover;
+}
+
+.with-lqip {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .aspect-landscape {

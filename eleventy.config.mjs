@@ -1,6 +1,6 @@
 /** @link https://www.11ty.dev/docs/config/ */
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-import { format } from "@formkit/tempo";
+import { shortcodes } from "./src/lib/shortcodes/index.js";
+import { filters } from "./src/lib/filters/index.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} config */
 export default function (config) {
@@ -12,25 +12,44 @@ export default function (config) {
     config.addPassthroughCopy({ "src/static": "/" });
 
     /** Plugins */
-    // 11ty image
-    config.addPlugin(eleventyImageTransformPlugin, {
-        htmlOptions: {
-            imgAttributes: {
-                alt: "",
-                loading: "lazy",
-                decoding: "async",
-            },
-        },
+
+    /** Custom Collections */
+    config.addCollection("property_listing", function (collections_api) {
+        const properties = collections_api.getFilteredByTag("property");
+        return properties
+            .flatMap((property) => {
+                if (property.data.data.listings.length) {
+                    return property.data.data.listings.map((listing) => {
+                        const parent_property = property.data.data;
+                        return {
+                            ...listing,
+                            property: {
+                                _id: parent_property._id,
+                                slug: parent_property.slug,
+                                location: parent_property.location,
+                                unit_mix: parent_property.unit_mix,
+                                image: parent_property.image,
+                            },
+                        };
+                    });
+                }
+            })
+            .filter(Boolean);
     });
 
+    /** Shortcodes */
+    for (const key in shortcodes) {
+        if (shortcodes.hasOwnProperty(key)) {
+            config.addShortcode(key, shortcodes[key]);
+        }
+    }
+
     /** Filters */
-    config.addFilter("short_date", (date_string) => {
-        return format({
-            date: date_string,
-            format: "medium",
-            tz: "UTC",
-        });
-    });
+    for (const key in filters) {
+        if (filters.hasOwnProperty(key)) {
+            config.addFilter(key, filters[key]);
+        }
+    }
 
     return {
         dir: {

@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ title }}</title>
-        <meta name="description" content="{{ meta.description }}">
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-        <!-- Base stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/styles/site.min.css">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=albert-sans:400,400i,600,800" rel="stylesheet">
-        <!-- Fontawesome Icons -->
-        <script defer src="/fontawesome/sharp-light.min.js"></script>
-        <script defer src="/fontawesome/fontawesome.min.js"></script>
+        {% render 'partials/components/head_meta.liquid',
+            data: data,
+            site_settings: sanity.site_settings,
+            page: page,
+            eleventy: eleventy
+        %}
+        {% render 'partials/components/head_assets.liquid' %}
     </head>
     <body>
-        {% render 'partials/components/site_header.liquid' with site.nav as navigation %}
+        {% assign main_navigation = sanity.navigation | find: '_id', '9bc06c89-9fbf-4d77-878d-76da31b376b4' %}
+        {% render 'partials/components/site_header.liquid', navigation: main_navigation %}
         {% block main %}
         {% endblock %}
-        {% render 'partials/components/site_footer.liquid', navigation: site.nav, settings: site.settings %}
+        {% render 'partials/components/site_footer.liquid',
+            navigation: main_navigation,
+            site_settings: sanity.site_settings
+        %}
     </body>
 </html>

@@ -3,7 +3,7 @@
         <div
             class="panes"
             data-composition="diptych"
-            data-layout="{%- if module.layout == "image-left" -%} flipped {%- else -%} normal {%- endif -%}"
+            data-layout="{%- if module.options.layout == "image-left" -%} flipped {%- else -%} normal {%- endif -%}"
         >
             <div class="flow moderato">
                 <h2 id="{{ module.heading | slugify }}">{{ module.heading }}</h2>
@@ -11,31 +11,23 @@
                 {% if module.ctas %}
                     <div class="ctas cluster">
                         {% for link in module.ctas %}
-                            <a
-                                href="{{ link.href }}"
-                                class="button-link"
-                                data-theme="{{ link.style }}"
-                                target="{% if link.external -%} _blank {%- else -%} _self {%- endif %}"
-                            >
-                                {{- link.label -}}
-                            </a>
+                            {%- capture style -%} data-theme="{{ link.style }}" {%- endcapture -%}
+                            {% sanity_link link "button-link" style %}
                         {% endfor %}
                     </div>
                 {% endif %}
             </div>
             <div class="images">
-                <img
-                    src="{{ module.secondary_image.src }}"
-                    alt="{{ module.secondary_image.alt }}"
-                    class="secondary"
-                    eleventy:widths="900"
-                >
-                <img
-                    src="{{ module.featured_image.src }}"
-                    alt="{{ module.featured_image.alt }}"
-                    class="featured"
-                    eleventy:widths="900"
-                >
+                {% for image in module.images %}
+                    {% if forloop.first %}
+                        {% assign style = 'featured' %}
+                    {% else %}
+                        {% assign style = 'secondary' %}
+                    {% endif %}
+                    <div class="image-wrapper">
+                        {% sanity_image image "800" "lazy" true style %}
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>

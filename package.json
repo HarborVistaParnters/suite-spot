@@ -27,6 +27,7 @@
         "@11ty/eleventy": "^3.0.0",
         "@11ty/eleventy-img": "^6.0.0",
         "@formkit/tempo": "^0.1.2",
+        "@portabletext/to-html": "^2.0.14",
         "@sanity/client": "^6.28.2",
         "@sanity/image-url": "^1.1.0",
         "groq": "^3.77.2",

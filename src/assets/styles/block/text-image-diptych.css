@@ -12,12 +12,14 @@
         position: relative;
         display: flex;
 
-        & picture:has(.featured) {
+        & .image-wrapper:has(.featured) {
             transform: scale(1.1) translate(-24px, -24px);
+            order: 2;
         }
 
-        & picture:has(.secondary) {
+        & .image-wrapper:has(.secondary) {
             transform: scale(1.1) translate(24px, 24px);
+            order: 1;
         }
     }
 }

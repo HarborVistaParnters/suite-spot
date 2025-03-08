@@ -1,6 +1,7 @@
 /** @link https://www.11ty.dev/docs/config/ */
 import { shortcodes } from "./src/lib/shortcodes/index.js";
 import { filters } from "./src/lib/filters/index.js";
+import sitemap_plugin from "@quasibit/eleventy-plugin-sitemap";
 
 /** @param {import("@11ty/eleventy").UserConfig} config */
 export default function (config) {
@@ -12,6 +13,11 @@ export default function (config) {
     config.addPassthroughCopy({ "src/static": "/" });
 
     /** Plugins */
+    config.addPlugin(sitemap_plugin, {
+        sitemap: {
+            hostname: "https://www.suitespotmgmt.com",
+        },
+    });
 
     /** Custom Collections */
     config.addCollection("property_listing", function (collections_api) {

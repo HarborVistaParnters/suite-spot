@@ -1,8 +1,8 @@
 {
-    "name": "suite-spot",
+    "name": "suite-spot-coliving",
     "version": "1.0.0",
     "type": "module",
-    "description": "",
+    "description": "Suite Spot co-living sub-brand site.",
     "watch": {
         "dev:lcss": {
             "patterns": [
